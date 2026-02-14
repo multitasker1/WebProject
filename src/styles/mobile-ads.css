@@ -1,0 +1,58 @@
+/* Mobile Ad Optimizations */
+
+/* Ensure ads are responsive on all devices */
+@media (max-width: 768px) {
+  /* Banner ads - make them fit mobile screens */
+  #banner-ad-container,
+  #banner-ad-desktop,
+  #banner-ad-mobile,
+  #responsive-banner-ad {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Native ads - full width on mobile */
+  #container-c1a690d6abda3d5eec6a20f85fb32f6e {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 8px !important;
+  }
+  
+  /* Adsterra iframe responsiveness */
+  iframe[id^="aswift"] {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #banner-ad-container,
+  #responsive-banner-ad {
+    max-width: 728px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Desktop - no changes needed */
+@media (min-width: 1024px) {
+  #banner-ad-desktop {
+    display: block !important;
+  }
+  
+  #banner-ad-mobile {
+    display: none !important;
+  }
+}
+
+/* PWA-specific styles */
+@media all and (display-mode: standalone) {
+  /* Ensure ads work in PWA mode */
+  body {
+    overflow-x: hidden;
+  }
+  
+  iframe {
+    max-width: 100vw !important;
+  }
+}

@@ -1,0 +1,90 @@
+═══════════════════════════════════════════════════════════
+📸 PROFILE PHOTO - QUICK REPLACEMENT GUIDE
+═══════════════════════════════════════════════════════════
+
+✅ LOCATION: src/pages/AboutPage.tsx (Line ~56)
+
+═══════════════════════════════════════════════════════════
+🔍 FIND THIS LINE:
+═══════════════════════════════════════════════════════════
+
+src="https://via.placeholder.com/500x500/4F46E5/ffffff?text=Your+Photo+Here"
+
+═══════════════════════════════════════════════════════════
+✏️ REPLACE WITH:
+═══════════════════════════════════════════════════════════
+
+Option 1 (Local file in public/images/):
+src="/images/profile.jpg"
+
+Option 2 (Local file in public/assets/):
+src="/assets/my-photo.png"
+
+Option 3 (External URL):
+src="https://your-image-url.com/photo.jpg"
+
+═══════════════════════════════════════════════════════════
+📐 IMAGE REQUIREMENTS:
+═══════════════════════════════════════════════════════════
+
+✅ Size: 500x500px or 800x800px (1:1 square)
+✅ Format: .jpg, .png, or .webp
+✅ Max size: 500KB recommended
+✅ Professional quality photo
+
+═══════════════════════════════════════════════════════════
+📁 HOW TO UPLOAD:
+═══════════════════════════════════════════════════════════
+
+1. Create folder: public/images/
+2. Put your photo: public/images/profile.jpg
+3. Update code: src="/images/profile.jpg"
+4. Save file
+5. Build: npm run build
+
+═══════════════════════════════════════════════════════════
+✨ CURRENT FEATURES:
+═══════════════════════════════════════════════════════════
+
+✅ 1:1 Square aspect ratio
+✅ Responsive on all devices
+✅ Gradient border (blue to purple)
+✅ Hover glow effect
+✅ Auto-centered
+✅ Fallback placeholder
+✅ WhatsApp button below
+
+═══════════════════════════════════════════════════════════
+🎯 EXACT CODE LOCATION:
+═══════════════════════════════════════════════════════════
+
+File: src/pages/AboutPage.tsx
+Section: Profile Section
+Line: Around line 56-58
+
+Look for the comment block:
+<!-- REPLACE IMAGE URL BELOW WITH YOUR PHOTO PATH -->
+
+═══════════════════════════════════════════════════════════
+📝 EXAMPLE:
+═══════════════════════════════════════════════════════════
+
+BEFORE:
+<img 
+  src="https://via.placeholder.com/500x500/4F46E5/ffffff?text=Your+Photo+Here"
+  alt="Profile Photo - Replace with your image"
+  className="w-full h-full object-cover"
+/>
+
+AFTER:
+<img 
+  src="/images/profile.jpg"
+  alt="Ashish Solanki - MCA Graduate"
+  className="w-full h-full object-cover"
+/>
+
+═══════════════════════════════════════════════════════════
+🚀 THAT'S IT! PHOTO WILL DISPLAY IN 1:1 SQUARE FORMAT
+═══════════════════════════════════════════════════════════
+
+Any questions? Check HOW_TO_ADD_PROFILE_PHOTO.md for details.
